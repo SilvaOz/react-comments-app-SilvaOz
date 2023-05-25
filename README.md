@@ -2,7 +2,7 @@
 
 Este es un proyecto simple de una aplicación de comentarios desarrollada en React. Permite a los usuarios escribir comentarios y ver los comentarios existentes.
 
-![Comment App](screenshot.png)
+![Comment App](https://github.com/SilvaOz/react-comments-app-SilvaOz/blob/master/Kommentar-App/public/seramejor.png)
 
 ## Características
 
