@@ -1,0 +1,7 @@
+{
+    "editor.fontSize": 12,
+    "editor.autoIndent": "none",
+    "editor.renderWhitespace": "none",
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "vs-seti"
+}

@@ -1,16 +1,11 @@
-import CommentForm from './components/Comment'
-
+import CommentApp from './components/CommentApp';
 import './App.css'
 
 function App() {
-
-
   return (
-    <>
-      <div className='container'>
-        <CommentForm />
-      </div>
-    </>
+    <div className='container'>
+      <CommentApp />
+    </div>
   )
 }
 
