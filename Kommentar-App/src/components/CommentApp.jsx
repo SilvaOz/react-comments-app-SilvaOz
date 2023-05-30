@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Comment from './Comment';
 import CommentForm from './CommentForm';
 import { FaComment } from 'react-icons/fa';
@@ -8,6 +8,19 @@ import '../App.css';
 // Componente CommentApp
 const CommentApp = () => {
     const [comments, setComments] = useState([]);
+
+    // Cargar los comentarios desde el localStorage al iniciar la aplicación
+    useEffect(() => {
+        const storedComments = localStorage.getItem('comments');
+        if (storedComments) {
+            setComments(JSON.parse(storedComments));
+        }
+    }, []);
+
+    // Actualizar el localStorage cuando cambien los comentarios
+    useEffect(() => {
+        localStorage.setItem('comments', JSON.stringify(comments));
+    }, [comments]);
 
     // Manejador para enviar un comentario
     const handleCommentSubmit = (comment) => {
